@@ -1,0 +1,38 @@
+doctype html
+html(ng-app='angulator')
+  head
+    title Angulator
+    link(rel='stylesheet', href='/index.css')
+  body(ng-controller='MainController')
+    h1 Angulator
+    h4 Angular + Calculator = Angulator
+
+    #calculator
+      #display {{display}}
+      #memory  {{memory}}
+      #operator  {{operator}}
+      .buttons
+        button(type='button', ng-click='addDisplay(7)') 7
+        button(type='button', ng-click='addDisplay(8)') 8
+        button(type='button', ng-click='addDisplay(9)') 9
+        button(type='button', ng-click='calculate("+")') +
+      .buttons
+        button(type='button', ng-click='addDisplay(4)') 4
+        button(type='button', ng-click='addDisplay(5)') 5
+        button(type='button', ng-click='addDisplay(6)') 6
+        button(type='button', ng-click='calculate("-")') -
+      .buttons
+        button(type='button', ng-click='addDisplay(1)') 1
+        button(type='button', ng-click='addDisplay(2)') 2
+        button(type='button', ng-click='addDisplay(3)') 3
+        button(type='button', ng-click='addDisplay("*")') *
+      .buttons
+        button(type='button', ng-click='addDisplay(0)') 0
+        button(type='button', ng-click='addDisplay(".")') .
+        button(type='button', ng-click='clearDisplay()') C
+        button(type='button', ng-click='calculate("/")') /
+      .buttons
+        button(type='button', ng-click='answer("=")') =
+
+    script(src='/vendor/angular/angular.js')
+    script(src='/index.js')
