@@ -1,0 +1,31 @@
+{
+  "name": "mean-template",
+  "version": "0.0.0",
+  "description": "The MEAN Template",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chyld/mean-template"
+  },
+  "author": "Chyld Medford <chyld.medford@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chyld/mean-template/issues"
+  },
+  "homepage": "https://github.com/chyld/mean-template",
+  "dependencies": {
+    "express": "^4.8.8",
+    "morgan": "^1.3.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-jade": "^0.12.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-less": "^0.11.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jscs": "^0.7.1",
+    "grunt-shell": "^1.1.1",
+    "jshint-stylish": "^0.4.0"
+  }
+}
